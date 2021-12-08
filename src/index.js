@@ -2,11 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Principal from './Componentes/Principal'
 import reportWebVitals from './reportWebVitals';
+
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Registrar from './Componentes/Registrar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<App/>}/>
+        <Route path="/index" element={<Principal/>}/>
+        <Route path="/registro" element={<Registrar/>}/>
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
