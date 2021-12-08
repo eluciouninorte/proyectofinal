@@ -17,8 +17,8 @@ ReactDOM.render(
         <Route exact path="/" element={<App/>}/>
         <Route path="/administrador" element={<Principal/>}/>
         <Route path="/registro" element={<Registrar/>}/>
-        <Route path="/usuariointerno" element={<UsuarioInterno/>}/>
-        <Route path="/usuarioexterno" element={<UsuarioExterno/>}/>
+        <Route path="/administrador/usuariointerno" element={<UsuarioInterno/>}/>
+        <Route path="/administrador/usuarioexterno" element={<UsuarioExterno/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,
