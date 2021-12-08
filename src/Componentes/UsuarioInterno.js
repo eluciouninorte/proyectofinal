@@ -3,7 +3,7 @@ import './App.css';
 
 import { Link } from "react-router-dom";
 
-function Principal() {
+function UsuarioInterno() {
   return (
     
     <div id="wrapper">
@@ -43,7 +43,6 @@ function Principal() {
                         <h6 className="collapse-header">Custom Components:</h6>
                         <Link to="usuariointerno"  className="collapse-item">Usuario Interno</Link>
                         <Link to="usuarioexterno"  className="collapse-item">Usuario Externo</Link>
-                       
                     </div>
                 </div>
             </li>
@@ -310,7 +309,7 @@ function Principal() {
                 {/*<!-- Begin Page Content -->*/}
                 <div className="container-fluid"> 
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Administrador</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Crear Usurio Interno</h1>
                         
                     </div>
                 </div>
@@ -340,4 +339,4 @@ function Principal() {
   );
 }
 
-export default Principal;
+export default UsuarioInterno;

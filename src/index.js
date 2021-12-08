@@ -7,14 +7,18 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Registrar from './Componentes/Registrar';
+import UsuarioInterno from './Componentes/UsuarioInterno';
+import UsuarioExterno from './Componentes/UsuarioExterno';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route exact path="/" element={<App/>}/>
-        <Route path="/index" element={<Principal/>}/>
+        <Route path="/administrador" element={<Principal/>}/>
         <Route path="/registro" element={<Registrar/>}/>
+        <Route path="/usuariointerno" element={<UsuarioInterno/>}/>
+        <Route path="/usuarioexterno" element={<UsuarioExterno/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,

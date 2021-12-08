@@ -40,7 +40,7 @@ function App() {
                                                 Me</label>
                                         </div>
                                     </div>
-                                    <Link to="index" className="btn btn-primary btn-user btn-block">
+                                    <Link to="administrador" className="btn btn-primary btn-user btn-block">
                                     Login
                                     </Link>
                                     
